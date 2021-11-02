@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Yard Sale - New Password</title>
+    <style>
+      :root {
+        /* colors */
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --white: #ffffff;
+        --black: #000000;
+        /* fonts */
+        --quicksand: "Quicksand", sans-serif;
+        --roboto: "Roboto", sans-serif;
+        --sm: 1.4rem;
+        --md: 1.6rem;
+        --lg: 1.8rem;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--quicksand);
+        font-size: var(--md);
+        font-weight: 500;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .form-container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 320px;
+        margin-top: 114px;
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+      .form-container > h1 {
+        font-size: var(--lg);
+        font-weight: 700;
+        line-height: 2.25;
+        text-align: left;
+        margin-bottom: 47px;
+      }
+      .form-container > form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      label > span {
+        font-size: var(--sm);
+        font-weight: 700;
+        line-height: 1.75rem;
+        color: var(--black);
+        margin-bottom: 6px;
+      }
+      label > input {
+        width: 100%;
+        height: 42px;
+        background-color: var(--text-input-field);
+        border-radius: 4px;
+        border: 1px solid var(--text-input-field);
+        margin-bottom: 24px;
+      }
+      .container > input[type="button"] {
+        height: 60px;
+        border: 1px solid var(--hospital-green);
+        background-color: var(--hospital-green);
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.0001));
+        border-radius: 10px;
+        color: var(--white);
+        justify-self: flex-end;
+        margin-top: auto;
+        margin-bottom: 26px;
+        margin-right: 18px;
+        margin-left: 18px;
+        font-size: var(--lg);
+        font-weight: 700;
+        line-height: 2.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1>My account</h1>
+        <form action="/" class="form">
+          <label for="name">
+            <span>Name</span>
+            <input type="text" id="name" placeholder="########" />
+          </label>
+          <label for="Email_address">
+            <span>Email address</span>
+            <input type="email" id="email_address" placeholder="@gmail.com" />
+          </label>
+          <label for="password">
+            <span>Re-enter Password</span>
+            <input type="password" id="password" placeholder="***********" />
+          </label>
+        </form>
+      </div>
+      <input type="button" value="Create account" />
+    </div>
+  </body>
+</html>
